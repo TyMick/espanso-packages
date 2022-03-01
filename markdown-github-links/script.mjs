@@ -6,3 +6,8 @@ if (path[2] === "pull" || path[2] === "issues") {
   const number = path[3];
   console.log(`[${repo}#${number}](${url})`);
 }
+
+if (path[2] === "commit") {
+  const hash = path[3];
+  console.log(`[\`${hash.substring(0, 7)}\`](${url})`);
+}

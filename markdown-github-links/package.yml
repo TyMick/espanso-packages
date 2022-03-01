@@ -1,3 +1,10 @@
 matches:
   - trigger: ":gh"
-    replace:
+    replace: "{{link}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: link
+        type: shell
+        params:
+          cmd: node "$CONFIG/match/packages/markdown-github-links/script.mjs" '{{clipboard}}'

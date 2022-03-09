@@ -11,3 +11,8 @@ if (path[2] === "commit") {
   const hash = path[3];
   console.log(`[\`${hash.substring(0, 7)}\`](${url})`);
 }
+
+if (path[2] === "tree" || path[2] === "blob") {
+  const dirOrFileName = path[path.length - 1];
+  console.log(`[\`${dirOrFileName}\`](${url})`);
+}

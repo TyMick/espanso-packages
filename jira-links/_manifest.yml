@@ -1,0 +1,5 @@
+name: jira-links
+title: Jira links
+description: Generate nicely formatted links from copied Jira URLs.
+version: 0.1.0
+author: Ty Mick

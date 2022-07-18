@@ -1,0 +1,20 @@
+matches:
+  - trigger: ":jira"
+    markdown: "{{link}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: link
+        type: shell
+        params:
+          cmd: node "$CONFIG/match/packages/jira-links/script.mjs" '{{clipboard}}'
+
+  - trigger: ":mdjira"
+    replace: "{{link}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: link
+        type: shell
+        params:
+          cmd: node "$CONFIG/match/packages/jira-links/script.mjs" '{{clipboard}}'

@@ -1,4 +1,15 @@
 matches:
+  # Rich text GitHub link
+  - trigger: ":rtg"
+    markdown: "{{link}}"
+    vars:
+      - name: clipboard
+        type: clipboard
+      - name: link
+        type: shell
+        params:
+          cmd: node "$CONFIG/match/packages/markdown-github-links/script.mjs" '{{clipboard}}'
+
   # Markdown GitHub link
   - trigger: ":mdg"
     replace: "{{link}}"

@@ -1,3 +1,3 @@
-# Markdown GitHub links
+# GitHub links
 
-Generates nicely formatted Markdown links from copied GitHub URLs.
+Generates nicely formatted links from copied GitHub URLs.

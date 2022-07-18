@@ -1,5 +1,5 @@
-name: markdown-github-links
-title: Markdown GitHub links
-description: Generates nicely formatted Markdown links from copied GitHub URLs.
+name: github-links
+title: GitHub links
+description: Generates nicely formatted links from copied GitHub URLs.
 version: 0.1.0
 author: Ty Mick

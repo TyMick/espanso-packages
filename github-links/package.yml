@@ -20,3 +20,5 @@ matches:
         type: shell
         params:
           cmd: node "$CONFIG/match/packages/markdown-github-links/script.mjs" '{{clipboard}}'
+
+  # TODO: HTML GitHub link

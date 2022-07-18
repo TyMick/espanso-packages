@@ -20,3 +20,5 @@ matches:
         type: shell
         params:
           cmd: node "$CONFIG/match/packages/jira-links/script.mjs" '{{clipboard}}'
+
+  # TODO: HTML Jira link

@@ -8,7 +8,7 @@ matches:
       - name: link
         type: shell
         params:
-          cmd: node "$CONFIG/match/packages/markdown-github-links/script.mjs" '{{clipboard}}'
+          cmd: node "$CONFIG/match/packages/github-links/script.mjs" '{{clipboard}}'
 
   # Markdown GitHub link
   - trigger: ":mdg"
@@ -19,6 +19,6 @@ matches:
       - name: link
         type: shell
         params:
-          cmd: node "$CONFIG/match/packages/markdown-github-links/script.mjs" '{{clipboard}}'
+          cmd: node "$CONFIG/match/packages/github-links/script.mjs" '{{clipboard}}'
 
   # TODO: HTML GitHub link

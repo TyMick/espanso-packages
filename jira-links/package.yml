@@ -1,5 +1,6 @@
 matches:
-  - trigger: ":jira"
+  # Rich text Jira link
+  - trigger: ":rtj"
     markdown: "{{link}}"
     vars:
       - name: clipboard
@@ -9,7 +10,8 @@ matches:
         params:
           cmd: node "$CONFIG/match/packages/jira-links/script.mjs" '{{clipboard}}'
 
-  - trigger: ":mdjira"
+  # Markdown Jira link
+  - trigger: ":mdj"
     replace: "{{link}}"
     vars:
       - name: clipboard

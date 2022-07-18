@@ -2,6 +2,10 @@ const url = new URL(process.argv[2]);
 const path = url.pathname.split("/").slice(1);
 const repo = path[1];
 
+if (path.length === 2) {
+  console.log(`[${repo}](${url})`);
+}
+
 if (path[2] === "pull" || path[2] === "issues") {
   if (path[4] === "commits") {
     const hash = path[5];

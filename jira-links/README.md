@@ -1,3 +1,3 @@
 # Jira links
 
-Generate nicely formatted links from copied Jira URLs.
+Generates nicely formatted links from copied Jira URLs.
